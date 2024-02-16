@@ -20,7 +20,7 @@
       <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <!-- Triangle card 1  -->
         <div class="card w-60 bg-base-100 shadow-xl">
-          <figure><img src="images/triangle.png" alt="Shoes" /></figure>
+          <figure><img src="images/triangle.png" alt="Triangle" /></figure>
           <div class="card-body">
             <h2 class="card-title ">Triangle</h2>
             <p class="text-center"> Area = .5 X b X h</p>
@@ -41,12 +41,21 @@
         </div>
         <!-- Rectangle card 2-->
         <div class="card w-60 bg-base-100 shadow-xl">
-          <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+          <figure><img src="images/rectangle.png" alt="Rectangle" /></figure>
           <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <h2 class="card-title">Rectangle</h2>
+            <p class="text-center">Area (A) =  w  X  l  </p>
+            <div> 
+              <input id="rectangle-width" class="w-12 p-2 rounded-sm text-2xl"  type="text" placeholder="w" name=""><span class="mr-2 ml-2"> cm </span>
+              <input id="rectangle-length" class="w-12 p-2 rounded-sm text-2xl" type="text" placeholder="l" name="" ><span class="ml-2">cm</span>
+            </div>
+            
+            <div>
+               <p class="text-2xl"> Area: <span id="rectangle-area"></span> <span>cm<sup>2</sup></span></p>
+            </div>
+           
             <div class="card-actions justify-end">
-              <button  class="btn btn-primary">Buy Now</button>
+              <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
             </div>
           </div>
         </div>
@@ -90,5 +99,6 @@
   </footer>
 
   <script src="scripts/triangle-calculate.js "></script>
+  <script src="scripts/rectangle-calculate.js"></script>
 </body>
 </html>
